@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#07060a">
+  <title>Spielleitung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-scene="admin">
+  <div class="bg" aria-hidden="true"></div>
+
+  <main class="stage">
+    <section class="screen">
+      <header class="admin-head">
+        <p class="eyebrow">Spielleitung</p>
+        <h1 class="h-small">Status</h1>
+      </header>
+
+      <div class="panel" aria-live="polite">
+        <dl>
+          <dt>Raum</dt>
+          <dd id="room">–</dd>
+          <dt>Tür</dt>
+          <dd id="lock">–</dd>
+          <dt>Stand</dt>
+          <dd id="updated" class="muted">–</dd>
+        </dl>
+      </div>
+
+      <p id="msg" class="msg" role="status" aria-live="polite"></p>
+
+      <div class="admin-actions">
+        <button type="button" id="refresh-btn" class="btn btn-ghost">
+          <span class="btn-label">Aktualisieren</span>
+        </button>
+        <button type="button" id="unlock-btn" class="btn" disabled>
+          <span class="btn-label">Freigeben</span>
+        </button>
+        <button type="button" id="reset-btn" class="btn btn-danger">
+          <span class="btn-label">Spiel zurücksetzen</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

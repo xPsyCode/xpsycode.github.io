@@ -1,182 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/style_main.css">
-    <link rel="stylesheet" href="./style/footer.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>TM-Enzmann</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07060a">
+  <meta name="format-detection" content="telephone=no">
+  <title>Die verschlossene Tür</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <nav>
-        <div class="logo">
-            <img id="logo" src="./image/logo.png"/>
-        </div>
-        <ul class="nav_links">
-            <li ><a class="nav" id="home" href="./test.php">Home</a></li>
-            <li ><a class="nav" id="leistung" href="./sites/services.html">Leistungen</a></li>
-            <li ><a class="nav" id="uns" href="./sites/about_us.html">Über Uns</a></li>
-            <li ><a class="nav" id="contact" href="./sites/contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
-    <div class="mainbody">
-        <script src="js/slider.js"></script>
-        <!-- Images Slider
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-    
-                <div class="slide first">
-                    <img src="image/test.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="image/test2.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="image/test3.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="image/test4.png" alt="">
-                </div>
-            </div>
-             Nav Auto remove?
-        
-            <div class="navi-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-        -->
-        <div id="slider">
-            <figure>
-                  <img src="https://c2.staticflickr.com/4/3743/8760292213_501dea0d6d_b.jpg">
-                  <img src="http://orig05.deviantart.net/4f25/f/2014/116/e/d/surprise_kiss__made_for_my_boyfriend__by_thekrisspybacon-d7g2gz9.png">
-                  <img src="https://c2.staticflickr.com/8/7033/6751442355_83cfe78752_b.jpg">
-            </figure>
-      </div>
-        </div>
-        <div class="tile-container">
-            <div class="tile-element"><h3>Trockenbau</h3>
-                <br>
-            <ul>
-                <li>Point 1</li>
-                <li>Point 2</li>
-                <li>Point 3</li>
-                <li>Point 4</li>
-                <li>Point 5</li>
-            </ul>
-            </div>
-            <div class="tile-element"><h3>Akustikbau</h3>
-                <br>
-                <ul>
-                    <li>Point 1</li>
-                    <li>Point 2</li>
-                    <li>Point 3</li>
-                    <li>Point 4</li>
-                    <li>Point 5</li>
-                </ul>
-            </div> 
-            <div class="tile-element"><h3>Montagebau</h3>
-                <br>
-                <ul>
-                    <li>Point 1</li>
-                    <li>Point 2</li>
-                    <li>Point 3</li>
-                    <li>Point 4</li>
-                    <li>Point 5</li>
-                </ul></div>
-            <div class="tile-element"><h3>Abriss</h3>
-                <br>
-                <ul>
-                    <li>Point 1</li>
-                    <li>Point 2</li>
-                    <li>Point 3</li>
-                    <li>Point 4</li>
-                    <li>Point 5</li>
-                    <li>Point 6</li>
-                    <li>Point 7</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<body data-scene="loading">
+  <div class="bg" aria-hidden="true"></div>
 
+  <main class="stage">
+    <!-- Laden -->
+    <section id="screen-loading" class="screen screen-center">
+      <div class="spinner" aria-hidden="true"></div>
+      <p class="muted">Die Schatten regen sich …</p>
+    </section>
 
-    <div class="contacts">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+    <!-- Raum -->
+    <section id="screen-room" class="screen" hidden>
+      <header class="room-head">
+        <p class="eyebrow" id="room-eyebrow"></p>
+        <h1 id="room-title"></h1>
+        <p class="lead" id="room-text"></p>
+      </header>
 
-    <footer class="footer container color1_background">
-        <div class="f_Content">
-            <div class="f_address f_col">
-                <div class="fhead">Adresse</div>
-                <div class="fdetail">
-                    <p class="bodytext">Thore Enzmann
-                    </p>
-                    <p class="bodytext">Burgfeldstraße 
-                    </p>
-                    <p class="bodytext">23795 Bad Segeberg</p>
-                </div>
-            </div>
-            <div class="f_kontakt f_col">
-                <div class="fhead">Kontakt</div>
-                <div class="fdetail">
-                    <p class="bodytext">Tel.: 04551 / </p>
-                    <p class="bodytext">E-Mail: <a href="">info@tm-enzmann.de</a></p>
-                    <p class="bodytext">&nbsp;</p>
-                </div>
-            </div>
-            <div class="f_nav f_col">
-                <div class="fhead">Links</div>
-                    <p class="bodytext"><a href="/impressum.html">Impressum</a></p>
-                    <p class="bodytext">&nbsp;</p></div>
-                </div>
-            </div>
-            <div class="logoFooter">
-            </div>
-            <div class="footerCopyRight">
-                <img class="copyright" id="logoFooter" src="./image/logo.png"/>
-
-                <ul class="right">
-                    <li class="copyright has-form">Copyright ©&nbsp;2022&nbsp;Die Trockenbrauerei</li>
-                </ul>
-            </div>
+      <form id="code-form" class="code-form" autocomplete="off" novalidate>
+        <div class="code-inputs" role="group" aria-label="Sechsstelliger Code">
+          <input type="text" inputmode="text" aria-label="Zeichen 1 von 6" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="next">
+          <input type="text" inputmode="text" aria-label="Zeichen 2 von 6" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="next">
+          <input type="text" inputmode="text" aria-label="Zeichen 3 von 6" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="next">
+          <input type="text" inputmode="text" aria-label="Zeichen 4 von 6" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="next">
+          <input type="text" inputmode="text" aria-label="Zeichen 5 von 6" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="next">
+          <input type="text" inputmode="text" aria-label="Zeichen 6 von 6" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="go">
         </div>
-        <div class="f_copyright color2_background">
-                <!-- <ul class="right">
-                <li class="copyright has-form">Copyright &copy;&nbsp;2022&nbsp;HPM Die Handwerksgruppe</li>
-            </ul> -->
-                <div class="footerSocial">
-                    <ul class="social-links-menu">
-                            
-                    </ul>
-                </div>
-        </div>
-    </footer>
+        <p id="msg" class="msg" role="status" aria-live="polite"></p>
+        <button type="submit" id="open-btn" class="btn" disabled>
+          <span class="btn-label">Öffnen</span>
+          <span class="spinner spinner-small" aria-hidden="true"></span>
+        </button>
+      </form>
+    </section>
+
+    <!-- Gesperrt -->
+    <section id="screen-locked" class="screen screen-center" hidden>
+      <svg class="keyhole" viewBox="0 0 40 64" aria-hidden="true">
+        <circle cx="20" cy="18" r="13"/>
+        <path d="M13 26 L7 60 H33 L27 26 Z"/>
+      </svg>
+      <p class="locked-text">Die Tür hat sich verriegelt. Ein Fehler nur – und du bleibst.</p>
+    </section>
+
+    <!-- Geschafft -->
+    <section id="screen-end" class="screen screen-center" hidden>
+      <p class="eyebrow">Frei</p>
+      <h1>Du bist entkommen</h1>
+      <p class="lead">Die letzte Tür schwingt auf. Kühle Nachtluft – und hinter dir fällt das Schloss ins Leere.</p>
+    </section>
+
+    <!-- Verbindungsfehler -->
+    <section id="screen-error" class="screen screen-center" hidden>
+      <h1 class="h-small">Keine Verbindung</h1>
+      <p class="lead" id="error-text"></p>
+      <button type="button" id="retry-btn" class="btn btn-ghost">Erneut versuchen</button>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/game.js"></script>
 </body>
 </html>
