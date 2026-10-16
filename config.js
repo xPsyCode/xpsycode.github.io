@@ -2,7 +2,7 @@
 window.CONFIG = {
   // URL der Google-Apps-Script-Web-App (endet auf /exec).
   // Das ist die EINZIGE Stelle, an der sie eingetragen wird.
-  API_URL: 'HIER_DIE_WEB_APP_URL_EINFUEGEN',
+  API_URL: 'https://script.google.com/macros/s/AKfycbyWVZ26ReQIVcM4byd85A9Bs1j7ban4iEKuGktyDZd603YojW3zlWksCXSgvHxK9Ystxw/exec',
 
   // Texte der Räume (Reihenfolge = Raum 1, 2, 3). Codes gehören NICHT hierher!
   ROOMS: [
