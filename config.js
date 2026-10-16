@@ -7,16 +7,16 @@ window.CONFIG = {
   // Texte der Räume (Reihenfolge = Raum 1, 2, 3). Codes gehören NICHT hierher!
   ROOMS: [
     {
-      title: 'Die Bibliothek',
-      text: 'Staub liegt auf den Regalen. Irgendwo zwischen den Seiten wartet das erste Geheimnis.',
+      title: 'Das Arbeitszimmer',
+      text: 'Die Standuhr schweigt, das Tagebuch liegt aufgeschlagen. Hinter dir ist die Tür ins Schloss gefallen. Sechs Zeichen trennen dich vom nächsten Raum.',
     },
     {
-      title: 'Das Laboratorium',
-      text: 'Glas klirrt, Flüssigkeiten schimmern im Halbdunkel. Die nächste Tür verlangt sechs Zeichen.',
+      title: 'Das Kinderzimmer',
+      text: 'Eine Kerze brennt, obwohl niemand hier ist. Vier Puppen sitzen still auf ihrer Bank, und eine von ihnen beobachtet dich. Ein Fehler, und du bleibst bei ihnen.',
     },
     {
-      title: 'Die Krypta',
-      text: 'Kerzen flackern über kaltem Stein. Nur noch eine Tür trennt dich von der Freiheit.',
+      title: 'Der Speisesaal',
+      text: 'Acht Plätze sind gedeckt. Sieben Stühle sind leer, einer wartet auf dich. Nur noch eine Tür trennt dich von der Freiheit.',
     },
   ],
 };
