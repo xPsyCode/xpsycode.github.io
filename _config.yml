@@ -1,0 +1,4 @@
+# Diese Dateien gehören nicht auf die Website (bleiben aber im Repository).
+exclude:
+  - ANLEITUNG.md
+  - apps-script
